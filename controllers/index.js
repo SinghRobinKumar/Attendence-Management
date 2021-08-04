@@ -1,8 +1,8 @@
 const Attendence = require("../models/mongo-schema");
 
 exports.new = (req, res, next) => {
-  const name = req.body.params.name;
-  const rno = req.body.params.rollno;
+  const name = req.body.params.name || "Robin";
+  const rno = req.body.params.rollno || "121";
 
   const attendence = new Attendence({
     name: name,

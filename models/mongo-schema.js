@@ -28,4 +28,4 @@ const model = new Schema({
   ],
 });
 
-module.exports = mongoose.model("Test-Attendence", model);
+module.exports = mongoose.model("Attendence", model);
